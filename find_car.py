@@ -1,3 +1,6 @@
+import tensorflow as tf
+from tensorflow import keras
+
 from keras.models import load_model
 from keras.preprocessing import image
 import glob
@@ -28,3 +31,5 @@ def find_car(input_dir, output_cars ="output.csv"):
   output = pd.DataFrame({'file': files, 'pred': preds})
   output['pred'] = output['pred'].astype(bool)
   output.to_csv(output_cars, index=False, header=False)
+
+find_car('./output')
