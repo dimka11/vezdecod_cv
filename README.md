@@ -12,3 +12,6 @@ calc_metric.py
 
 task 40:
 find_color.py
+
+task 50:
+check_stop_signals.py
