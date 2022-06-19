@@ -26,7 +26,7 @@ def calc_metric(image, x, y, w, h):
 
 
 def find_color(input_dir, output_file="output_color.csv"):
-	black = (0,0,0)
+	black = (-25,-25,-25)
 	blue_cyan = (255,255,0)
 	green = (0,255,0)
 	red = (0,0,255)
@@ -57,6 +57,7 @@ def find_color(input_dir, output_file="output_color.csv"):
 		diff_c = []
 
 		for c in colors:
+			# dist = sqrt(((color[2]-c[2])*0.3)**2 + ((color[1]-c[1])*0.59)**2 + ((color[0]-c[0])*0.11)**2)
 			b_ = abs(color[0] - c[0])
 			g_ = abs(color[1] - c[1])
 			r_ = abs(color[2] - c[2])
