@@ -9,3 +9,7 @@ find_car.py
 
 task 30:
 calc_metric.py
+
+task 40:
+
+find_color.py
